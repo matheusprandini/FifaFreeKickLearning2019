@@ -88,7 +88,7 @@ class FifaEnv():
         if executed_action in [0,1]:
 		    # Hasn't shooted the ball yet (Movement actions)
             reward = -0.05	
-        elif np.abs(new_score - self.score) > 500:
+        elif np.abs(new_score - self.score) > 200:
 		    # Scored a goal
             reward = 1
         elif game_step_over:
